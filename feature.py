@@ -5,10 +5,6 @@ import argparse
 VECTOR_LEN = 300   # Length of glove vector
 MAX_WORD_LEN = 64  # Max word length in dict.txt and glove_embeddings.txt
 
-################################################################################
-# We have provided you the functions for loading the tsv and txt files. Feel   #
-# free to use them! No need to change them at all.                             #
-################################################################################
 
 
 def load_tsv_dataset(file):
