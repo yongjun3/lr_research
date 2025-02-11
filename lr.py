@@ -131,9 +131,6 @@ def compute_error(train_pred,train_real,test_pred,test_real,metrics):
     return
 
 if __name__ == '__main__':
-    # This takes care of command line argument parsing for you!
-    # To access a specific argument, simply access args.<argument name>.
-    # For example, to get the learning rate, you can use `args.learning_rate`.
     parser = argparse.ArgumentParser()
     parser.add_argument("train_input", type=str, help='path to formatted training data')
     parser.add_argument("validation_input", type=str, help='path to formatted validation data')
@@ -155,7 +152,7 @@ train_prediction=predict_data_header(args.train_input,trained_parameters,args.tr
 compute_error_header(test_prediction,train_prediction,args.train_input,args.test_input,args.metrics_out)
 
 
-#0th index is theta parameters, #1st index is bias values
+
 
 
 
